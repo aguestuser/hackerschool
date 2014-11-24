@@ -10,6 +10,8 @@ var _ = require('underscore')
 
 
 // my version
+var _ = require('underscore')
+song(20, 0, 'crazy')
 
 function song(start, end, version) { 
   return _.chain(_.range(start, end, -1))
