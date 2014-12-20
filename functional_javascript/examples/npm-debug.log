@@ -1,0 +1,225 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'replpad' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'replpad', null ]
+5 verbose cache add name=undefined spec="replpad" args=["replpad",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'replpad',
+6 verbose parsed url   path: 'replpad',
+6 verbose parsed url   href: 'replpad' }
+7 silly lockFile c5ef2343-replpad replpad
+8 verbose lock replpad /Users/aguest/.npm/c5ef2343-replpad.lock
+9 silly lockFile c5ef2343-replpad replpad
+10 silly lockFile c5ef2343-replpad replpad
+11 verbose addNamed [ 'replpad', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 677cd375-replpad replpad@
+14 verbose lock replpad@ /Users/aguest/.npm/677cd375-replpad.lock
+15 silly addNameRange { name: 'replpad', range: '*', hasData: false }
+16 verbose request where is /replpad
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 6500f0707a2f06e7
+19 verbose url raw /replpad
+20 verbose url resolving [ 'https://registry.npmjs.org/', './replpad' ]
+21 verbose url resolved https://registry.npmjs.org/replpad
+22 verbose request where is https://registry.npmjs.org/replpad
+23 info trying registry request attempt 1 at 21:54:14
+24 http GET https://registry.npmjs.org/replpad
+25 http 200 https://registry.npmjs.org/replpad
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Fri, 21 Nov 2014 02:54:14 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"10CWT9IFUTWGALEYLTP9D53BN"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '67850',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-jfk1024-JFK',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1416538454.225656,VS0,VE15',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'replpad', range: '*', hasData: true }
+28 silly addNameRange versions [ 'replpad',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.7',
+28 silly addNameRange     '0.2.8',
+28 silly addNameRange     '0.2.9',
+28 silly addNameRange     '0.2.10',
+28 silly addNameRange     '0.2.11',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.4.2',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.2',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.9.1',
+28 silly addNameRange     '0.9.2',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '0.11.0',
+28 silly addNameRange     '0.11.1',
+28 silly addNameRange     '0.11.2',
+28 silly addNameRange     '0.11.3',
+28 silly addNameRange     '0.11.4',
+28 silly addNameRange     '0.11.5',
+28 silly addNameRange     '0.11.6',
+28 silly addNameRange     '0.11.7',
+28 silly addNameRange     '0.11.8',
+28 silly addNameRange     '0.11.9',
+28 silly addNameRange     '0.12.0' ] ]
+29 verbose addNamed [ 'replpad', '0.12.0' ]
+30 verbose addNamed [ '0.12.0', '0.12.0' ]
+31 silly lockFile 99377735-replpad-0-12-0 replpad@0.12.0
+32 verbose lock replpad@0.12.0 /Users/aguest/.npm/99377735-replpad-0-12-0.lock
+33 silly lockFile f4223f63-s-org-replpad-replpad-0-12-0-tgz https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz
+34 verbose lock https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz /Users/aguest/.npm/f4223f63-s-org-replpad-replpad-0-12-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz',
+35 verbose addRemoteTarball   'ad4d6502482c580ab97acf63b90bdb3df810e2f0' ]
+36 info retry fetch attempt 1 at 21:54:14
+37 verbose fetch to= /var/folders/z4/7mdfyd1d0rg4h4zc_736hzfw0000gn/T/npm-23703-Xm3kn8ef/registry.npmjs.org/replpad/-/replpad-0.12.0.tgz
+38 http GET https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz
+39 http 200 https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz
+40 silly lockFile f4223f63-s-org-replpad-replpad-0-12-0-tgz https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz
+41 silly lockFile f4223f63-s-org-replpad-replpad-0-12-0-tgz https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz
+42 silly lockFile 99377735-replpad-0-12-0 replpad@0.12.0
+43 silly lockFile 99377735-replpad-0-12-0 replpad@0.12.0
+44 silly lockFile 677cd375-replpad replpad@
+45 silly lockFile 677cd375-replpad replpad@
+46 silly resolved [ { name: 'replpad',
+46 silly resolved     version: '0.12.0',
+46 silly resolved     description: 'Pipes content of files to a node repl whenever they change and adds many more features to enable a highly interactive coding experience.',
+46 silly resolved     main: 'repreprep.js',
+46 silly resolved     bin: { replpad: './bin/replpad.js' },
+46 silly resolved     scripts:
+46 silly resolved      { 'test-main': 'tap test/',
+46 silly resolved        'test-0.8': 'nave use 0.8 npm run test-main',
+46 silly resolved        'test-0.10': 'nave use 0.10 npm run test-main',
+46 silly resolved        'test-all': 'npm run test-main && npm run test-0.8 && npm run test-0.10',
+46 silly resolved        test: 'if [ -e $TRAVIS ]; then npm run test-all; else npm run test-main; fi' },
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/thlorenz/replpad.git' },
+46 silly resolved     keywords:
+46 silly resolved      [ 'node',
+46 silly resolved        'repl',
+46 silly resolved        'edit',
+46 silly resolved        'evaluate',
+46 silly resolved        'debug',
+46 silly resolved        'scriptie-talkie',
+46 silly resolved        'jsdoc',
+46 silly resolved        'source',
+46 silly resolved        'doc',
+46 silly resolved        'documentation' ],
+46 silly resolved     author:
+46 silly resolved      { name: 'Thorsten Lorenz',
+46 silly resolved        email: 'thlorenz@gmx.de',
+46 silly resolved        url: 'thlorenz.com' },
+46 silly resolved     license: 'MIT',
+46 silly resolved     dependencies:
+46 silly resolved      { 'anchor-markdown-header': '~0.3.2',
+46 silly resolved        ansicolors: '~0.2.1',
+46 silly resolved        ansistyles: '~0.1.1',
+46 silly resolved        cardinal: '~0.4.2',
+46 silly resolved        escodegen: '0.0.15',
+46 silly resolved        esprima: '~1.0.3',
+46 silly resolved        'find-parent-dir': '~0.1.0',
+46 silly resolved        findex: '~0.2.1',
+46 silly resolved        'function-comment': '~0.2.0',
+46 silly resolved        hasinternet: '0.0.0',
+46 silly resolved        hermit: '~0.2.2',
+46 silly resolved        marked: '~0.2.9',
+46 silly resolved        mkdirp: '~0.3.5',
+46 silly resolved        mothership: '~0.3.0',
+46 silly resolved        msee: '0.1.0-alpha.3',
+46 silly resolved        opener: '~1.3.0',
+46 silly resolved        readdirp: '~0.2.5',
+46 silly resolved        'readline-matchtoken': '~0.1.0',
+46 silly resolved        'readline-vim': '~0.3.0',
+46 silly resolved        request: '~2.12.0',
+46 silly resolved        'require-like': '~0.1.2',
+46 silly resolved        'scriptie-talkie': '~0.4.7',
+46 silly resolved        xtend: '~2.0.6' },
+46 silly resolved     devDependencies: { nave: '~0.4.5', tap: '~0.4.1' },
+46 silly resolved     gitHead: '0bc3698140ff5d4b68ac1597a86d286cbb58f980',
+46 silly resolved     bugs: { url: 'https://github.com/thlorenz/replpad/issues' },
+46 silly resolved     homepage: 'https://github.com/thlorenz/replpad',
+46 silly resolved     _id: 'replpad@0.12.0',
+46 silly resolved     _shasum: 'ad4d6502482c580ab97acf63b90bdb3df810e2f0',
+46 silly resolved     _from: 'replpad@',
+46 silly resolved     _npmVersion: '1.4.14',
+46 silly resolved     _npmUser: { name: 'thlorenz', email: 'thlorenz@gmx.de' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'ad4d6502482c580ab97acf63b90bdb3df810e2f0',
+46 silly resolved        tarball: 'http://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/replpad/-/replpad-0.12.0.tgz' } ]
+47 info install replpad@0.12.0 into /usr/local/lib
+48 info installOne replpad@0.12.0
+49 verbose lib/node_modules/replpad unbuild
+50 verbose tar unpack /Users/aguest/.npm/replpad/0.12.0/package.tgz
+51 silly lockFile 3461302e-r-local-lib-node-modules-replpad tar:///usr/local/lib/node_modules/replpad
+52 verbose lock tar:///usr/local/lib/node_modules/replpad /Users/aguest/.npm/3461302e-r-local-lib-node-modules-replpad.lock
+53 silly lockFile e81adf63-t-npm-replpad-0-12-0-package-tgz tar:///Users/aguest/.npm/replpad/0.12.0/package.tgz
+54 verbose lock tar:///Users/aguest/.npm/replpad/0.12.0/package.tgz /Users/aguest/.npm/e81adf63-t-npm-replpad-0-12-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/replpad'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/replpad']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/replpad',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/replpad',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.2.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "replpad"
+60 error cwd /Users/aguest/Dropbox/code/hackerschool/repo/functional_javascript/examples
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/replpad
+64 error fstream_path /usr/local/lib/node_modules/replpad
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/replpad'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
