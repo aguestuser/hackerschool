@@ -7,7 +7,7 @@
   (and (not (pair? x)) (not (null? x))))
 
 ;; rember*
-(define rember* 
+(define rember*
   (lambda (a l)
     (cond
      [(null? l) '()]
@@ -17,12 +17,10 @@
        [else (cons (car l) (rember* a (cdr l)))])]
      [else (cons (rember* a (car l)) (rember* a (cdr l)) )])))
 
-;; rember* tests
 (module+ test
-  (check-equal? 
+  (check-equal?
    (rember* 'cup '((coffee) cup ((tea) cup)(and (hick)) cup))
    '((coffee)((tea))(and(hick)))))
- 
 
 ;; insertR*
 (define insertR*
@@ -34,19 +32,18 @@
        [(eq? (car l) old)(cons old (cons new (insertR* new old (cdr l))))]
        [else (cons (car l) (insertR* new old (cdr l)))])]
      [else (cons (insertR* new old (car l)) (insertR* new old (cdr l)))])))
-
 ;; test insertR*
 (module+ test
   (check-equal?
-   (insertR* 'roast 'chuck '((how much (wood)) 
-                            could ((a (wood) chuck)) 
+   (insertR* 'roast 'chuck '((how much (wood))
+                            could ((a (wood) chuck))
                             (((chuck)))
-                            (if (a) ((wood chuck))) 
+                            (if (a) ((wood chuck)))
                             could chuck wood))
    '((how much (wood))
-     could ((a (wood) chuck roast)) 
+     could ((a (wood) chuck roast))
      (((chuck roast)))
-     (if (a) ((wood chuck roast))) 
+     (if (a) ((wood chuck roast)))
      could chuck roast wood)))
 
 ;; occur*
@@ -55,7 +52,7 @@
    (cond
     [(null? l) 0]
     [(atom? (car l))
-     (cond 
+     (cond
       [(eq? (car l) a)(+ 1 (occur* a (cdr l)))]
       [else (occur* a (cdr l))])]
     [else (+ (occur* a (car l))(occur* a (cdr l)))])))
@@ -76,7 +73,7 @@
   (lambda (new old l)
     (cond
      [(null? l) '()]
-     [(atom? (car l)) 
+     [(atom? (car l))
       (cond
        [(eq? old (car l)) (cons new (subst* new old (cdr l)))]
        [else (cons (car l) (subst* new old (cdr l)))])]
@@ -86,16 +83,16 @@
 (module+ test
   (check-equal?
    (subst* 'orange 'banana '((banana)
-                             (split ((((banana ice))) 
+                             (split ((((banana ice)))
                                      (cream (banana))
-                                     sherbet)) 
+                                     sherbet))
                              (banana)
                              (bread)
                              (banana brandy)))
    '((orange)
      (split ((((orange ice)))
              (cream (orange))
-             sherbet)) 
+             sherbet))
      (orange)
      (bread)
      (orange brandy))))
@@ -113,7 +110,6 @@
 
 ;; test member*
 (module+ test
-  (check-equal? 
+  (check-equal?
    (member* 'chips '((potato) (chips ((with) fish) (chips))))
    #t))
-

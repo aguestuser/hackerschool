@@ -1,17 +1,17 @@
 // synthetic generic comparator
 
-function lessOrEqual(x, y) { 
+function lessOrEqual(x, y) {
   return x <= y;
 }
 
-function comparator(pred) { 
+function comparator(pred) {
   return function(x, y) {
     if (pred(x, y))
       return -1;
     else if (pred(y, x))
-      return 1; 
+      return 1;
     else
-      return 0; 
+      return 0;
   };
 };
 
@@ -31,7 +31,7 @@ function existy(x) { return x != null };
   existy(false); //=> true
 
 function truthy(x) { return (x !== false) && existy(x) };
-  
+
   //usage:
   truthy(false); //=> false
   truthy(undefined); //=> false
@@ -40,9 +40,9 @@ function truthy(x) { return (x !== false) && existy(x) };
 
 // application of truthy to a "do something if it's a thing, otherwise return undefined" pattern:
 
-function doWhen(cond, action) { 
+function doWhen(cond, action) {
   if(truthy(cond)){
-    return action();    
+    return action();
   }
   else{
     return undefined;
@@ -52,9 +52,9 @@ function doWhen(cond, action) {
 function executeIfHasField(target, name) {
   return doWhen(existy(target[name]), function() {
     var result = _.result(target, name); // will invoke target[name] if name is a function, otherwise return value of target[name]
-    console.log(['The result is', result].join(' ')); 
+    console.log(['The result is', result].join(' '));
     return result;
-  }); 
+  });
 }
 
   // usage:
@@ -62,4 +62,6 @@ function executeIfHasField(target, name) {
   executeIfHasField({foo: 42}, 'foo'); // (console) The result is 42 //=> 42
   executeIfHasField([1,2,3], 'notHere'); //=> undefined
 
-
+function fail(thing) { throw new Error(thing); }
+function warn(thing) { console.log(["WARNING:", thing].join(' ')); }
+function note(thing) { console.log(["NOTE:", thing].join(' ')); }

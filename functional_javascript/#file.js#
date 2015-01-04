@@ -1,0 +1,6 @@
+var something ={
+    attr: function(){
+	return something;
+
+    }
+}

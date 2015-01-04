@@ -1,0 +1,14 @@
+#lang plai-typed
+
+;; rember
+(define rember
+  (lambda (a lat)
+    (cond 
+      [(null? lat) '()]
+      [(eq? a (car lat)) (cdr lat)]
+      [else ( cons (car lat) (rember a (cdr lat) ) )] )))
+
+;; test rember
+(define rember_good? (equal? (rember 'b '(a b c d e b) ) '(a c d e b)) )
+(test rember_good? #t)
+
